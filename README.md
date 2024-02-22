@@ -1,8 +1,5 @@
 # Image_Acqusition-_using_Web_Camera
 ## Aim
- 
-Aim:
- 
 To write a python program using OpenCV to capture the image from the web camera and do the following image manipulations.
 i) Write the frame as JPG 
 ii) Display the video 
@@ -33,9 +30,9 @@ End the program and close the output video window by pressing 'q'.
 <br>
 
 ## Program:
-``` Python
-### Developed By: ABINAYA S
-### Register No:  212222230002
+```
+ Developed By: ABINAYA S
+ Register No:  212222230002
 ```
 ## i) Write the frame as JPG file
 ```
@@ -43,7 +40,7 @@ import cv2
 viedoCaptureObject=cv2.VideoCapture(0)
 while(True):
     ret,frame=viedoCaptureObject.read()
-    cv2.imwrite("deepika.jpg",frame)
+    cv2.imwrite("image.jpg",frame)
     result=False
 viedoCaptureObject.release()
 cv2.destroyAllWindows()
@@ -56,7 +53,7 @@ import cv2
 cap=cv2.VideoCapture(0)
 while True:
     ret,frame=cap.read()
-    cv2.imshow('',frame)
+    cv2.imshow('image',frame)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
@@ -82,7 +79,7 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=smaller_frame
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222230028_deepika',image)
+    cv2.imshow('212222230002_abinaya',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
@@ -105,7 +102,7 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=cv2.rotate(smaller_frame,cv2.ROTATE_180)
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222230028_deepika',image)
+    cv2.imshow('212222230002_abinaya',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
