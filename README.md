@@ -40,7 +40,7 @@ import cv2
 viedoCaptureObject=cv2.VideoCapture(0)
 while(True):
     ret,frame=viedoCaptureObject.read()
-    cv2.imwrite("image.jpg",frame)
+    cv2.imwrite("abinaya.jpg",frame)
     result=False
 viedoCaptureObject.release()
 cv2.destroyAllWindows()
@@ -119,6 +119,7 @@ cv2.destroyAllWindows()
 ## Output
 
 ### i) Write the frame as JPG image
+![img1](https://github.com/abinayasangeetha/Image_Acqusition-_using_Web_Camera/assets/119393675/5ca77325-05af-4da8-8299-ed149132ede3)
 
 
 </br>
